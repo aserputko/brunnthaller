@@ -7,8 +7,56 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+	<div id="slides">
+		<div class="container">
+			<div class="carousel slide">
+		    <div class="carousel-inner">
+		      <div class="item active">
+		      	<img src="/assets/slides/slide1.jpg" alt="">
+		      	<div class="carousel-caption">
+			        <h4>Slider 1</h4>
+			        <p>930x180</p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="/assets/slides/slide2.jpg" alt="">
+		      	<div class="carousel-caption">
+			        <h4>Slider 2</h4>
+			        <p>930x180</p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="/assets/slides/slide3.jpg" alt="">
+		      	<div class="carousel-caption">
+			        <h3>Slider 3</h3>
+			        <p>930x180</p>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div id="main-navbar" class="container">
+	<div class="navbar-inner">
+  	<div class="container">
+    	<a class="brand" href="#">Brunnthaller</a>
+    	<ul class="nav">
+			  <li class="active"><a href="#">Главная</a></li>
+			  <li><a href="#">Наши Объекты</a></li>
+			  <li><a href="#">Партньёры</a></li>
+			  <li><a href="#">Контакты</a></li>
+			  <li><a href="#">О Нас</a></li>
+			</ul>
+    </div>
+  </div>
+  </div>
+</div>
+<div id="main" class="container">
+	test!
+	<%= yield %>
+</div>
 
-<%= yield %>
-
+	
 </body>
 </html>
