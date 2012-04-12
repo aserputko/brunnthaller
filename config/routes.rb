@@ -1,6 +1,7 @@
 Brunnthaller::Application.routes.draw do
   get "catalogs/index"
 
+  root :to => "catalogs#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
