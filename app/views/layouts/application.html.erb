@@ -12,25 +12,39 @@
 		<div class="container">
 			<div class="carousel slide">
 		    <div class="carousel-inner">
-		      <div class="item active">
+		    	<div class="item active">
+		      	<img src="/assets/slides/1_930_180.jpg" alt="">
+		      	<div class="carousel-caption">
+			        <h4>Slider ..</h4>
+			        <p>930x240</p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="/assets/slides/2_930_180.jpg" alt="">
+		      	<div class="carousel-caption">
+			        <h4>Slider ..</h4>
+			        <p>930x240</p>
+		        </div>
+		      </div>
+		      <div class="item">
 		      	<img src="/assets/slides/slide1.jpg" alt="">
 		      	<div class="carousel-caption">
 			        <h4>Slider 1</h4>
-			        <p>930x180</p>
+			        <p>930x240</p>
 		        </div>
 		      </div>
 		      <div class="item">
 		      	<img src="/assets/slides/slide2.jpg" alt="">
 		      	<div class="carousel-caption">
 			        <h4>Slider 2</h4>
-			        <p>930x180</p>
+			        <p>930x240</p>
 		        </div>
 		      </div>
 		      <div class="item">
 		      	<img src="/assets/slides/slide3.jpg" alt="">
 		      	<div class="carousel-caption">
 			        <h3>Slider 3</h3>
-			        <p>930x180</p>
+			        <p>930x240</p>
 		      	</div>
 		      </div>
 		    </div>
@@ -42,11 +56,11 @@
   	<div class="container">
     	<a class="brand" href="#">Brunnthaller</a>
     	<ul class="nav">
-			  <li class="active"><a href="#">Главная</a></li>
+			  <li class="active"><%= link_to "Главная", root_path %></li>
 			  <li><a href="#">Наши Объекты</a></li>
 			  <li><a href="#">Партньёры</a></li>
 			  <li><a href="#">Контакты</a></li>
-			  <li><a href="#">О Нас</a></li>
+			  <li><%= link_to "О Нас", about_path %></li>
 			</ul>
     </div>
   </div>
@@ -55,7 +69,12 @@
 <div id="main" class="container">
 	<%= yield %>
 </div>
-
-	
+<footer class="navbar">
+  <div class="navbar-inner">
+  	<div class="container">
+			<h3 class="copyright offset4">Copyright &copy; 2012 Brunnthaler.</h3>
+		</div>
+  </div>
+</footer>	
 </body>
 </html>
